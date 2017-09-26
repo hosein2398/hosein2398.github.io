@@ -38,17 +38,18 @@
                     the_element_height = the_element.clientHeight;
                     element_bound = document.querySelector(args.element).getBoundingClientRect();
                     if (element_bound.top < 0) {
-                        if (el_top_count < 1) {
+                        // if (el_top_count < 1) {
                             element_start_top = document.body.scrollTop - Math.abs(element_bound.top);
-                        }
-                        console.log(-element_bound.top)
-                        el_top_count++;
+                        // }
+                        // console.log(-element_bound.top)
+                        // el_top_count++;
                         if (args.element) {
                             var body_scroll_top = document.body.scrollTop - element_start_top;
                             ratio = parseInt((body_scroll_top / the_element_height) * 100);
                         } else {
                             ratio = parseInt((body_scroll_top / document.body.clientHeight) * 100);
                         }
+                        console.log(ratio)
                         the_scroll.style.display = 'block';
                         if (document.body.scrollTop < previous_scroll_top) {
                             the_scroll.style.width = ratio + '%';
