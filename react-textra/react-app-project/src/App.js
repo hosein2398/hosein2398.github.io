@@ -32,7 +32,7 @@ function App () {
               </SyntaxHighlighter>
               </div>
             <div>
-              <a href="" className="button">Go to docs</a>
+              <a href="https://github.com/hosein2398/react-textra" className="button">Go to docs</a>
             </div>
             </div>
           </div>
